@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@rush-temp/rush-test-monorepo': file:./projects/rush-test-monorepo.tgz
