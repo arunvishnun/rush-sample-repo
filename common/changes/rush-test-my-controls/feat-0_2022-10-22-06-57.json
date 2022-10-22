@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "rush-test-my-controls",
+      "comment": "change 2",
+      "type": "minor"
+    }
+  ],
+  "packageName": "rush-test-my-controls"
+}

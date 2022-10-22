@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "rush-test-my-toolchain",
+      "comment": "change 3",
+      "type": "minor"
+    }
+  ],
+  "packageName": "rush-test-my-toolchain"
+}
