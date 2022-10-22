@@ -1,0 +1,31 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@rush-temp/rush-test-monorepo': file:./projects/rush-test-monorepo.tgz
+  '@rush-temp/rush-test-my-controls': file:./projects/rush-test-my-controls.tgz
+  '@rush-temp/rush-test-my-toolchain': file:./projects/rush-test-my-toolchain.tgz
+
+dependencies:
+  '@rush-temp/rush-test-monorepo': file:projects/rush-test-monorepo.tgz
+  '@rush-temp/rush-test-my-controls': file:projects/rush-test-my-controls.tgz
+  '@rush-temp/rush-test-my-toolchain': file:projects/rush-test-my-toolchain.tgz
+
+packages:
+
+  file:projects/rush-test-monorepo.tgz:
+    resolution: {integrity: sha512-AzhxCMFg2ucQ7GYseM0DYW7KLyNDxBfiW2tzmTX25ZWG3rBSyUlsLIMVBQKdkwpwmAXMsg5gdNJ15+0EG8+tRQ==, tarball: file:projects/rush-test-monorepo.tgz}
+    name: '@rush-temp/rush-test-monorepo'
+    version: 0.0.0
+    dev: false
+
+  file:projects/rush-test-my-controls.tgz:
+    resolution: {integrity: sha512-rD9c2PCbIlI6LVOsPQzmBrgSka0WR1IRenXQGdAGT5DXP3scHggJ82AxOIB1L0XRIiXdwpTpRe+NwNy3WMIgpw==, tarball: file:projects/rush-test-my-controls.tgz}
+    name: '@rush-temp/rush-test-my-controls'
+    version: 0.0.0
+    dev: false
+
+  file:projects/rush-test-my-toolchain.tgz:
+    resolution: {integrity: sha512-Aa+UdlQqzlRCh5D+hFDyNwG09t/ak7QM388HQwQPklIam8LgIPdW8ezq6VSkvN+AmU9Mo76oJx1pPWV2YL+gLQ==, tarball: file:projects/rush-test-my-toolchain.tgz}
+    name: '@rush-temp/rush-test-my-toolchain'
+    version: 0.0.0
+    dev: false

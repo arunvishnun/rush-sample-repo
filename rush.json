@@ -421,5 +421,20 @@
     //   "reviewCategory": "tools",
     //   "tags": [ "tools" ]
     // }
+    {
+      "packageName": "rush-test-my-controls",
+      "projectFolder": "packages/rush-test-my-controls",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "rush-test-my-toolchain",
+      "projectFolder": "packages/rush-test-my-toolchain",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "rush-test-monorepo",
+      "projectFolder": "packages/rush-test-monorepo",
+      "shouldPublish": true
+    }
   ]
 }

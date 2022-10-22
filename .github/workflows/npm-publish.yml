@@ -1,0 +1,57 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
+
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: node common/scripts/install-run-rush.js install
+      - run: node common/scripts/install-run-rush.js rebuild --verbose
+
+  publish-npm:
+    # This needs to be done only when merge to main / master happens
+    # if: ${{ github.ref == 'refs/heads/main' }}
+
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+
+      # The "rush install" command installs package dependencies for all your
+      # projects, based on the shrinkwrap file that is created/updated using "rush
+      # update". 
+      - name: Install Dependencies
+        run: node common/scripts/install-run-rush.js install --max-install-attempts 2
+
+      - name: Build packages
+        run: node common/scripts/install-run-rush.js rebuild --verbose
+      
+      - name: Set Git user
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+      
+      - name: Bump Version
+        run: node common/scripts/install-run-rush.js version --bump
+
+      - name: Publish
+        run: node common/scripts/install-run-rush.js publish --apply --publish --set-access-level=public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+          
