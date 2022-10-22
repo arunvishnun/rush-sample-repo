@@ -1,5 +1,5 @@
 {
-  "name": "rush-test-monorepo",
+  "name": "rush-test-package",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",

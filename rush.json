@@ -432,8 +432,8 @@
       "shouldPublish": true
     },
     {
-      "packageName": "rush-test-monorepo",
-      "projectFolder": "packages/rush-test-monorepo",
+      "packageName": "rush-test-package",
+      "projectFolder": "packages/rush-test-package",
       "shouldPublish": true
     }
   ]
