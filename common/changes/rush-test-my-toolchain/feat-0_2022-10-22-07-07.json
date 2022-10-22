@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "rush-test-my-toolchain",
+      "comment": "update version to previously published one",
+      "type": "patch"
+    }
+  ],
+  "packageName": "rush-test-my-toolchain"
+}
