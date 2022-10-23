@@ -1,1 +1,1 @@
-console.log('rush test my tool chains repo - change 5')
+console.log('rush test my tool chains repo - change 6')
