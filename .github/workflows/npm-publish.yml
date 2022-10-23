@@ -5,9 +5,9 @@ name: Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "alpha" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "alpha"  ]
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
