@@ -5,9 +5,12 @@ name: Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "alpha" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "alpha"  ]
+    
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   build:
@@ -22,7 +25,7 @@ jobs:
 
   publish-npm:
     # This needs to be done only when merge to main / master happens
-    # if: ${{ github.ref == 'refs/heads/main' }}
+    if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/alpha' }}
 
     needs: build
     runs-on: ubuntu-latest
@@ -36,22 +39,25 @@ jobs:
       # The "rush install" command installs package dependencies for all your
       # projects, based on the shrinkwrap file that is created/updated using "rush
       # update". 
-      - name: Install Dependencies
+      - name: Run 'rush install'
         run: node common/scripts/install-run-rush.js install --max-install-attempts 2
 
-      - name: Build packages
+      - name: Run 'rush rebuild'
         run: node common/scripts/install-run-rush.js rebuild --verbose
       
-      - name: Set Git user
+      - name: Git config user
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
       
-      - name: Bump Version
+      - name: Run 'rush version --bump'
+        if: ${{ github.ref == 'refs/heads/alpha' }}
         run: node common/scripts/install-run-rush.js version --bump
 
-      - name: Publish
-        run: node common/scripts/install-run-rush.js publish --apply --publish --include-all --set-access-level=public
+      - name: Run 'rush publish'
+        # TODO: Remove suffix and this condition after testing.
+        if: ${{ github.ref == 'refs/heads/alpha' }}
+        run: node common/scripts/install-run-rush.js publish --apply --publish --include-all --set-access-level=public --suffix alpha
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
           

@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "rush-test-my-controls",
+      "comment": "Console log message has been changed. Test",
+      "type": "minor"
+    }
+  ],
+  "packageName": "rush-test-my-controls"
+}

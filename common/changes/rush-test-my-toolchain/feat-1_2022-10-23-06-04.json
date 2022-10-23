@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "rush-test-my-toolchain",
+      "comment": "Console log changes to this package ",
+      "type": "minor"
+    }
+  ],
+  "packageName": "rush-test-my-toolchain"
+}
