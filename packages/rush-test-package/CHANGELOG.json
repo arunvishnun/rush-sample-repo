@@ -1,0 +1,17 @@
+{
+  "name": "rush-test-package",
+  "entries": [
+    {
+      "version": "2.0.0",
+      "tag": "rush-test-package_v2.0.0",
+      "date": "Tue, 25 Oct 2022 19:49:07 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "change package name"
+          }
+        ]
+      }
+    }
+  ]
+}
