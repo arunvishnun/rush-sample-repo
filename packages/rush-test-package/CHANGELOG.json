@@ -2,6 +2,18 @@
   "name": "rush-test-package",
   "entries": [
     {
+      "version": "1.0.3",
+      "tag": "rush-test-package_v1.0.3",
+      "date": "Thu, 01 Jun 2023 20:06:21 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "no chagne"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.2",
       "tag": "rush-test-package_v1.0.2",
       "date": "Thu, 01 Jun 2023 19:36:16 GMT",
