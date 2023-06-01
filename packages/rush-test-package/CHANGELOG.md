@@ -1,6 +1,13 @@
 # Change Log - rush-test-package
 
-This log was last generated on Thu, 01 Jun 2023 19:36:16 GMT and should not be manually modified.
+This log was last generated on Thu, 01 Jun 2023 20:07:58 GMT and should not be manually modified.
+
+## 1.0.3
+Thu, 01 Jun 2023 20:07:58 GMT
+
+### Patches
+
+- no chagne
 
 ## 1.0.2
 Thu, 01 Jun 2023 19:36:16 GMT
