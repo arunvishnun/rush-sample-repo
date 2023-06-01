@@ -7,8 +7,8 @@
     "src"
   ],
   "scripts": {
-    "build": "echo \"Error: no test specified\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo \"Building...\"",
+    "test": "echo \"Executing tests...\""
   },
   "repository": {
     "type": "git",

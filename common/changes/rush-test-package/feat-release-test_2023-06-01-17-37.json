@@ -2,8 +2,8 @@
   "changes": [
     {
       "packageName": "rush-test-package",
-      "comment": "change package name",
-      "type": "major"
+      "comment": "sample change in package 3",
+      "type": "patch"
     }
   ],
   "packageName": "rush-test-package"
