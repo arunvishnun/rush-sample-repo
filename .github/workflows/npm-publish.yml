@@ -31,7 +31,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          # registry-url: https://registry.npmjs.org/
+          registry-url: https://registry.npmjs.org/
 
       # The "rush install" command installs package dependencies for all your
       # projects, based on the shrinkwrap file that is created/updated using "rush
@@ -48,7 +48,7 @@ jobs:
           git config user.email github-actions@github.com
       
       - run: cat $NPM_CONFIG_USERCONFIG
-      # - run: cat /home/runner/work/_temp/.npmrc
+      - run: cat /home/runner/work/_temp/.npmrc
 
       - name: Bump Version
         run: node common/scripts/install-run-rush.js version --bump
