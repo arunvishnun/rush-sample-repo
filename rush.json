@@ -501,14 +501,14 @@
     {
       "packageName": "rush-test-my-controls",
       "projectFolder": "packages/rush-test-my-controls",
-      "shouldPublish": true
-      // "versionPolicyName": "MyBigFramework"
+      "shouldPublish": true,
+      "versionPolicyName": "MyBigFramework"
     },
     {
       "packageName": "rush-test-my-toolchain",
       "projectFolder": "packages/rush-test-my-toolchain",
-      "shouldPublish": true
-      // "versionPolicyName": "MyBigFramework"
+      "shouldPublish": true,
+      "versionPolicyName": "MyBigFramework"
     },
     {
       "packageName": "rush-test-package",
