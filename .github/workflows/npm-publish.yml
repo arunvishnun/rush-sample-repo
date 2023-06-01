@@ -48,7 +48,7 @@ jobs:
           git config user.email github-actions@github.com
       
       - run: cat $NPM_CONFIG_USERCONFIG
-      - run: cat /home/runner/work/_temp/.npmrc
+      # - run: cat /home/runner/work/_temp/.npmrc
 
       - name: Bump Version
         run: node common/scripts/install-run-rush.js version --bump
