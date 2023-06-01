@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "rush-test-package",
+      "comment": "sample change",
+      "type": "patch"
+    }
+  ],
+  "packageName": "rush-test-package"
+}
