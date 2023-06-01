@@ -2,6 +2,18 @@
   "name": "rush-test-my-controls",
   "entries": [
     {
+      "version": "1.1.2",
+      "tag": "rush-test-my-controls_v1.1.2",
+      "date": "Thu, 01 Jun 2023 19:36:16 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "sample change"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.1.1",
       "tag": "rush-test-my-controls_v1.1.1",
       "date": "Thu, 01 Jun 2023 17:40:09 GMT",
