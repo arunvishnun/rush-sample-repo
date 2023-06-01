@@ -2,7 +2,7 @@
   "changes": [
     {
       "packageName": "rush-test-package",
-      "comment": "sample change in package 3",
+      "comment": "sample change",
       "type": "patch"
     }
   ],

@@ -2,8 +2,8 @@
   "changes": [
     {
       "packageName": "rush-test-my-toolchain",
-      "comment": "sample change 2",
-      "type": "none"
+      "comment": "sample change",
+      "type": "patch"
     }
   ],
   "packageName": "rush-test-my-toolchain"

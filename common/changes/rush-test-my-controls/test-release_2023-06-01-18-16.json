@@ -3,7 +3,7 @@
     {
       "packageName": "rush-test-my-controls",
       "comment": "sample change",
-      "type": "none"
+      "type": "patch"
     }
   ],
   "packageName": "rush-test-my-controls"
