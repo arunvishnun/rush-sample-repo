@@ -514,6 +514,12 @@
       "packageName": "rush-test-package",
       "projectFolder": "packages/rush-test-package",
       "shouldPublish": true
+    },
+    {
+      "packageName": "react-redux-test",
+      "projectFolder": "packages/react-redux-test",
+      "shouldPublish": true
     }
+    
   ]
 }
